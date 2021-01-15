@@ -1,0 +1,240 @@
+//#include <stdio.h>
+//#include <stdlib.h>
+//
+//int main()
+//{
+//    printf("Hello world!\n");
+//    return 0;
+//}
+#include<stdio.h>
+//int main()
+//{
+//    int n,arr[1001]={0},tmp,i,j,tt;
+//    scanf("%d",&n);
+//    for(i=0;i<n;i++)
+//    {
+//        scanf("%d",&tmp);
+//        for(j=0;j<tmp;j++)
+//        {
+//            scanf("%d",&tt);
+//            arr[tt]++;
+//        }
+//    }
+//    int max=0,maxi;
+//    for(i=0;i<=1000;i++)
+//    {
+//        if(arr[i]>=max)
+//        {
+//            max=arr[i];
+//            maxi=i;
+//        }
+//    }
+//    printf("%d %d",maxi,max);
+//    return 0;
+//}
+//#include<stdio.h>
+//int main()
+//{
+//    int n,i,j,key;
+//    scanf("%d",&n);
+//    int arr[n];
+//    for(i=0;i<n;i++)
+//        scanf("%d",&arr[i]);
+//    for(i=1;i<n;i++)
+//    {
+//        key=arr[i];
+//        j=i-1;
+//        while(j>-1&&arr[j]<key)
+//        {
+//            arr[j+1]=arr[j];
+//            j--;
+//        }
+//        arr[j+1]=key;
+//    }
+//    for(i=0;i<n;i++)
+//        printf("%d ",arr[i]);
+//
+//    return 0;
+//}
+//#include<stdio.h>
+//int main()
+//{
+//    int n,i,j,key;
+//    scanf("%d",&n);
+//    int arr[n];
+//    for(i=0;i<n;i++)
+//        scanf("%d",&arr[i]);
+//    for(i=1;i<n;i++)
+//    {
+//        key=arr[i];
+//        j=i-1;
+//        while(j>-1&&arr[j]>key)
+//        {
+//            arr[j+1]=arr[j];
+//            j--;
+//        }
+//        arr[j+1]=key;
+//    }
+//    for(i=0;i<n;i++)
+//        printf("%d ",arr[i]);
+//
+//    return 0;
+//}
+//#include<stdio.h>
+//#include<string.h>
+//int main()
+//{
+//    char arrA[11],arrB[11],tmp[11];
+//    int count=0;
+//    while(~scanf("%s",tmp)&&strcmp(tmp,".")!=0)
+//    {
+//        count++;
+//        if(count==2)
+//            strcpy(arrA,tmp);
+//        if(count==14)
+//            strcpy(arrB,tmp);
+//    }
+//    if(count<2)
+//        printf("Momo... No one is for you ...");
+//    else if(count >=2&&count<14)
+//        printf("%s is the only one for you...",arrA);
+//    else
+//        printf("%s and %s are inviting you to dinner...",arrA,arrB);
+//    return 0;
+//}
+//#include<stdio.h>
+//int main()
+//{
+//    int A,B;
+//    scanf("%d%d",&A,&B);
+//    printf("%d",A*B);
+//}
+//#include<stdio.h>
+//int main()
+//{
+//    float A,B;
+//    scanf("%f%f",&A,&B);
+//    if(B==0)
+//        printf("%.0f/%.0f=Error",A,B);
+//    else if(B<0)
+//        printf("%.0f/(%.0f)=%.2f",A,B,A/B);
+//    else
+//        printf("%.0f/%.0f=%.2f",A,B,A/B);
+//    return 0;
+//}
+//#include<stdio.h>
+//int main()
+//{
+//    printf("Hello World\nHello New World");
+//    return 0;
+//}
+//#include<stdio.h>
+//int strlen(const char*arr)
+//{
+//    int count=0;
+//    while(*arr)
+//    {
+//        arr++;
+//        count++;
+//    }
+//    return count;
+//}
+//int main()
+//{
+//    int n,count,i,j,k=0;
+//    char arr[1001];
+//    scanf("%d",&n);
+//    gets(arr);
+//    count=strlen(arr);
+//    char arr2[n][count/4];
+//    for(i=count/4-1;i>0;i--)
+//    {
+//        for(j=0;j<n&&k<count;j++)
+//        {
+//            arr2[j][i]=arr[k];
+//            k++;
+//        }
+//    }
+//    for(i=0;i<n;i++)
+//    {
+//        for(j=0;j<count/n;j++)
+//            printf("%c",arr2[i][j]);
+//        printf("\n");
+//    }
+//    return 0;
+//}
+//#include<stdio.h>
+//int strlen(const char*arr)
+//{
+//    int count=0;
+//    while(*arr)
+//    {
+//        arr++;
+//        count++;
+//    }
+//    return count;
+//}
+//int main()
+//{
+//    int n,count,i,j,k=0,col;
+//    char arr[1001];
+//    scanf("%d",&n);
+//    getchar();
+//    gets(arr);
+//    count=strlen(arr);
+//    if(count/n)
+//    {
+//        col=count/n+1;
+//    }
+//    else
+//        col=count/n;
+//    char arr2[n][col];
+//    for(i=col-1;i>=0;i--)
+//    {
+//        for(j=0;j<n&&k<=count;j++)
+//        {
+//            arr2[j][i]=arr[k];
+//            k++;
+//        }
+//    }
+//    for(i=0;i<n;i++)
+//    {
+//        for(j=0;j<col;j++)
+//            printf("%c",arr2[i][j]);
+//        printf("\n");
+//    }
+//    return 0;
+//}
+//#include<stdio.h>
+//#include<string.h>
+//int main()
+//{
+//    int n,count,i,j,k=0,col;
+//    char arr[1001];
+//    scanf("%d",&n);
+//    getchar();
+//    gets(arr);
+//    count=strlen(arr);
+//    if(count%n)
+//        col=count/n+1;
+//    else
+//        col=count/n;
+//    char arr2[n][col];
+//    for(i=col-1;i>=0;i--)
+//    {
+//        for(j=0;j<n;j++)
+//        {
+//            if(k<count)arr2[j][i]=arr[k];
+//            else
+//                arr2[j][i]=' ';
+//            k++;
+//        }
+//    }
+//    for(i=0;i<n;i++)
+//    {
+//        for(j=0;j<col;j++)
+//            printf("%c",arr2[i][j]);
+//        printf("\n");
+//    }
+//    return 0;
+//}
